@@ -1,0 +1,65 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.desktop-header {
+    display: flex;
+    transition: all 500ms linear;
+    padding: 20px;
+}
+.desktop-header.active {
+    background-color: white;
+}
+
+.desktop-header-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.desktop-header-center {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop-header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.cart-img-wrapper {
+    width: 22px;
+}
+.cart-img-wrapper img {
+    width: 100%;
+}
+
+
+.section-title {
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown-section {
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 20px;
+}
+.dropdown-section.active {
+    visibility: visible;
+}
